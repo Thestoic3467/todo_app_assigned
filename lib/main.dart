@@ -110,6 +110,7 @@ class _TodoHomePageState extends State<TodoHomePage> {
                 FloatingActionButton(
                   backgroundColor: Theme.of(context).primaryColor,
                   onPressed: () {
+                    _addTask();
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(
                         content: Text('Task added successfully'),
