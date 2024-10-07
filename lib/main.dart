@@ -42,9 +42,6 @@ class _TodoHomePageState extends State<TodoHomePage> {
   void _addTask() {
     if (_taskController.text.isNotEmpty) {
       setState(() {
-        // Clear the previous tasks
-        _tasks.clear();
-
         // Generate a random number of times to add the task (between 2 and 9)
         final randomCount =
             2 + (Random().nextInt(8)); // Random number between 2 and 9
