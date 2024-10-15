@@ -44,7 +44,7 @@ class _TodoHomePageState extends State<TodoHomePage> {
       setState(() {
         _tasks.add(Task(
             name: _taskController.text,
-            isCompleted: false)); // Add the task only once
+            isCompleted: true)); // Add the task only once
       });
     }
   }
